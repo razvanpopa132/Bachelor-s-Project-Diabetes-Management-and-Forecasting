@@ -1,0 +1,193 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: visible;
+}
+
+#topBar {
+  background-color: rgb(32, 124, 167);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: white;
+}
+
+#topBar h1 {
+  margin: 0;
+}
+
+#options {
+  left: 0;
+  background-color: #f1f1f1;
+  width: 200px;
+  z-index: 1;
+  min-height: 100vh; /* Change height to min-height */
+  background-color: rgb(44, 44, 44);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: visible;
+}
+
+#more-info {
+  background-color: #acb5b5;
+  border-radius: 5px;
+}
+
+#more-info h2 {
+  padding: 5px;
+}
+
+#toggleButton {
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 2px;
+  background-color: rgb(41, 40, 40);
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(156, 149, 149);
+  border-left: 3px solid rgb(41, 40, 40);
+}
+
+.option:hover {
+  background-color: black;
+  transition-duration: 0.3s;
+  color: white;
+  border-left-color: rgb(23, 152, 158);
+}
+
+#contentWrapper {
+  display: flex;
+
+  background-color: rgb(228, 222, 222);
+}
+
+#content {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.dates form {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
+}
+
+.dates form label {
+  margin-top: 20px;
+}
+
+.dates form input {
+  margin: 5px;
+  font-size: 20px;
+}
+
+img {
+  width: 1070px;
+  height: 370px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.option.hovered {
+  background-color: black;
+  color: white;
+  border-left-color: rgb(23, 152, 158);
+}
+
+#uploadForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#uploadForm button {
+  font-size: 20px;
+}
+#csvFile {
+  font-size: 20px;
+}
+
+.submit-btn {
+  font-size: 20px;
+  width: 120px;
+  margin-left: 20%;
+}
+
+#more-info1 {
+  flex-direction: row;
+}
+
+#more-info1 ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#more-info1 ul li {
+  border-top: 5px solid rgb(117, 110, 110);
+}
+
+#predicted_values_ul {
+  border-right: 5px solid rgb(117, 110, 110);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.acf_plot {
+  width: 700px;
+  height: 370px;
+}
+
+#graphContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  border-radius: 15px;
+}
+
+img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#min_max_table {
+  width: 1000px;
+}
+
+button {
+  margin-top: 5px;
+}
