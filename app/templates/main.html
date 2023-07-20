@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="topBar">
+      <i
+        id="toggleButton"
+        onclick="toggleOptions()"
+        class="fa-sharp fa-solid fa-bars"
+      ></i>
+      <h1>Diabetes Forecasting Web App</h1>
+    </div>
+
+    <div id="contentWrapper">
+      <div id="options">
+        <div class="option" id="option1" onclick="showContent('Incarca CSV');">
+          <i class="fa fa-upload" aria-hidden="true"></i> încarcă fișierul CSV
+        </div>
+        <div class="option" onclick="showContent('Creeaza grafic')">
+          Creează grafic zone anormale.
+        </div>
+        <div class="option" onclick="showContent('Realizeaza predictii')">
+          Realizează predicții
+        </div>
+        <div class="option" onclick="showContent('Optiuni avansate')">
+          Opțiuni avansate
+        </div>
+      </div>
+
+      <div id="content">
+        <h1>Salut!</h1>
+        <p>
+          Pentru a începe, încarcă un fișier CSV ce conține setul de date. Apoi,
+          poți creea un grafic și vizualiza diferite date referitoare la
+          graficul creat.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="../static/javascript/script.js"></script>
+  <script>
+    function showUploadStatus() {
+      $("#status").text("Vă rugăm așteptați...");
+    }
+  </script>
+</html>
